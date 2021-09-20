@@ -5,7 +5,7 @@ p {margin: 0;}
 html, body{
 	font-family: 'Arimo', sans-serif;
 	font-size:100%;
-	background:#ea6f4d;
+	background-image:url(../images/Back.jpg);
 	padding:2em 0;
 }
 body a:hover{
@@ -468,7 +468,7 @@ ul.social li i.fd:hover{
 .brand{
 }
 .brand-content-bar{
-	width:73%;
+	width:100%;
 	margin-right:2%;
 	float:left;
 	min-height:400px;
@@ -579,7 +579,7 @@ h2.resp-accordion:hover{
 	text-shadow: none;
 	color: #FFF;
 }
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:780px) {
 .sap_tabs{
 	padding-top:0;
 }
@@ -703,15 +703,15 @@ ul.tab_list li a:hover {
 }
 .nbs-flexisel-item > img {
 	cursor: pointer;
-	positon: relative;
+	position: relative;
 }
 .biseller-info {
 	margin: 2em 0 0;
 }
 /*** Navigation ***/
 .nbs-flexisel-nav-left, .nbs-flexisel-nav-right {
-	width: 30px;
-	height: 48px;
+	width: 0px;
+	height: 8px;
 	position: absolute;
 	cursor: pointer;
 	z-index: 100;

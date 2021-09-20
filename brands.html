@@ -12,6 +12,16 @@
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Google Fonts -->
 <link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#horizontalTab').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion           
+            width: 'auto', //auto or any width like 600px
+            fit: true   // 100% fit in a container
+        });
+    });
+</script>	
 </head>
 <body>
 <!-- Header Starts Here -->
@@ -34,8 +44,7 @@
 				<li><a href="index.html">Дом</a></li>
 				<li><a href="brands.html"  class="active">Партнеры</a></li>
 				<li><a href="men.html">Хочу дарить</a></li>
-				<li><a href="contact.html">Хочу получить</a></li>
-				<li><a href="contact.html">О нас</a></li>
+				<li><a href="contact.html">Хочу получить / О нас</a></li>
 			</ul>
 		</div>
 	
@@ -45,46 +54,91 @@
 <!-- Header Part Ends Here -->
 <!-- Brand Page Starts Here -->
 <div class="container">
-<div class="brand">
-	<!-- Content --- Bar -->
-		<div class="brand-content-bar brandy-content">
-			<ul class="path">
-				<li><a href="index.html">Home</a>&nbsp; ></li>
-				<li class="actev">Партнеры&nbsp;</li>
-			</ul>
-			<h3 class="page-hed">Наши партнеры</h3>
-			<div class="brand-row">
-				<a href="https://tsu.tula.ru/">
-					<div class="brand-logo-grid">
-						<img src="https://mozgstudent.ru/assets/images/institutes-logo/logotip_tulgu.png" alt="" />
-					</div>
-				</a>
-				<a href="https://mi.com">
-					<div class="brand-logo-grid">
-						<img src="https://im0-tub-ru.yandex.net/i?id=108508ef69ce207625d6a8504f70ab2d-sr&n=13" alt="" />
-					</div>
-				</a>
-				<a href="https://www.nike.com/ru">
-					<div class="brand-logo-grid">
-						<img src="images/brand4.jpg" alt="" />
-					</div>
-				</a>
-					</div>
-				</a>
-			</div>
-		</div>
-		<div class="brand-side-bar">
-			
-			<div class="top-brand-menu">
-				<h3>Важность наших партнеров</h3>
-				<p><font color="white">The Ray-Ban&reg; Wayfarer&reg; is simply the most recognizable style in sunglasses. The distinct shape is paired with the traditional Ray-Ban signature logo on the sculpted temples. After its initial design in 1952, the Ray-Ban Wayfarer quickly endeared itself to Hollywood filmmakers, celebrities, musicians and artists,solidifying its iconic status for years to come. </font></p>
-
-
-			</div>
-			
-		</div>
-</div>
-</div>
+	<div class="brand">
+		<!-- Content --- Bar -->
+			<div class="brand-content-bar">
+				<ul class="path">
+					<li><a href="index.html">Главная</a>&nbsp; ></li>
+					<li class="actev">Партнеры&nbsp;</li>
+				</ul>
+				<!-- Responsive tabs -->
+				 <div class="sap_tabs">	
+						 <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+							<div class="resp-tabs-list" > 	 
+										<div class="facts">
+											<ul id="flexiselDemo1">
+												<li>
+													<div class="fact-col">
+														<a href="https://tsu.tula.ru/"><img src="https://sun9-42.userapi.com/s/v1/if1/fGvBlU8WPZ03HorjqnyBl-3i0vYtFlx44nelTn4uzK404x5ZWTZx-BstNTfmR6Q4srfhjICf.jpg?size=200x0&quality=96&crop=0,0,1000,1000&ava=1" alt=""></a>
+														<h4><span>ТуЛГУ</span></h4>
+														<h4>Высшее учебное заведение, расположенное в Туле.</h4>
+														
+													</div>
+												</li>
+												<li>
+													<div class="fact-col">
+														<a href="https://leadersofdigital.ru/"><img src="https://sun1-91.userapi.com/c850416/v850416877/17164/U60gkpuolJg.jpg?ava=1" alt=""></a>
+														<h4><span>Цифровой прорыв</span></h4>
+														<h4>площадка для самых актуальных кейсов, передовых IT-решений. </h4>
+													</div>
+												</li>
+												<li>
+													<div class="fact-col">
+														<a href="https://www.rosatom.ru/"><img src="https://sopira.ru/upload/image/parners_4.jpg" alt=""></a>
+														<h4><span>Росатом</span></h4>
+														<h4>Государственный холдинг, объединяющий более 400 предприятий атомной отрасли. </h4>
+													</div>
+												</li>
+												<li>
+													<div class="fact-col">
+														<a href="https://raec.su/"><img src="https://sun1-25.userapi.com/s/v1/ig1/pDIDsIOnZzbgLbhsMeT7MmQEQztiSSSL9B7tRpRbN-NDUK7clRDzVXutR2SwN-gxU4282j3i.jpg?size=200x0&quality=96&crop=126,126,748,748&ava=1" alt=""></a>
+														<h4><span>РАЭК</span></h4>
+														<h4>Союз независимых электротехнических компаний-дистрибьюторов. </h4>
+													</div>
+												</li>
+												<li>
+													<div class="fact-col">
+														<a href="https://rsv.ru/"><img src="https://ocdo.tomsk.gov.ru/uploads/272/thumbs/news/medium_d84e1853d8222e2e18cacb2adebd22a2172b8af2.png" width="200"></a>
+														<h4><span>Россия страна возможностей</span></h4>
+														<h4>Открытая площадка для общения талантливых и неравнодушных людей всех возрастов. </h4>															
+													</div>
+												</li>
+											</ul>
+	
+											
+											<!-- sLIDER- SCRIPT -->
+												<script type="text/javascript">
+													 $(window).load(function() {
+														$("#flexiselDemo1").flexisel({
+															visibleItems: 3,
+															animationSpeed: 1000,
+															autoPlay: true,
+															autoPlaySpeed: 3000,    		
+															pauseOnHover: true,
+															enableResponsiveBreakpoints: true,
+															responsiveBreakpoints: { 
+																portrait: { 
+																	changePoint:480,
+																	visibleItems: 1
+																}, 
+																landscape: { 
+																	changePoint:640,
+																	visibleItems: 2
+																},
+																tablet: { 
+																	changePoint:768,
+																	visibleItems: 3
+																}
+															}
+														});
+														
+													});
+												   </script>
+												   <script type="text/javascript" src="js/jquery.flexisel.js"></script> 
+				</div>
+			</div>	
+		 </div>			 
+	</div>
 </div>
 
 <!-- Content --- Bar -->
