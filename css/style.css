@@ -62,7 +62,7 @@ ul.navig li a{
 	text-transform:uppercase;
 	color:#777;
 	font-weight:700;
-	padding-bottom:0.5em;
+	padding-bottom:0em;
 }
 ul.navig li a:hover , .active{
 	color:#000;
@@ -123,7 +123,7 @@ a.active{
 }
 .banner p{
 	font-size: 0.875em;
-	width: 47%;
+	width: 45%;
 	line-height: 1.8em;
 	color: #000;
 	font-weight: 400;
