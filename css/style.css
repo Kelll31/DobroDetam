@@ -131,7 +131,7 @@ a.active{
 }
 .banner a{
 	font-size:0.875em;
-	background:#51a460;
+	background:#AD2E95;
 	padding:15px 25px;
 	color:#fff;
 	text-transform: uppercase;
@@ -686,7 +686,6 @@ ul.tab_list li a:hover {
 	float: left;
 	margin:0px;
 	padding:0px;
-	cursor: pointer;
 	position: relative;
 	line-height: 0px;
 }
