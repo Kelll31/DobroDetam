@@ -1161,6 +1161,30 @@ p.register-user a:hover{
 div.register-bottom-grid {
 	margin-top:3em;
 }
+
+.login-but{
+	margin-top:1em;
+}
+.login-but form input[type="submit"] {
+	background:#fb4d01;
+	color: #FFF;
+	font-size: 0.8em;
+	padding: 0.8em 2em;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	display: inline-block;
+	text-transform: uppercase;
+	border:none;
+	outline:none;
+}
+.login-but input[type="submit"]:hover {
+	background:#26d2fc;
+}
+div.login-bottom-grid {
+	margin-top:3em;
+}
 /*-- Register ---*/
 /*-- Single Page Starts Here --*/
 .details-left-slider {
