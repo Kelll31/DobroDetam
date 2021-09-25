@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
-<title>Добро детям |  Регистрация</title>
+<title>Добро детям |  Войти</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery-1.11.0.min.js"></script>
@@ -15,6 +15,7 @@
 <link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
+
 <!-- Header Starts Here -->
 <div class="container">
 	<div class="header">
@@ -37,8 +38,8 @@
 				<li><a href="men.html">Галерея мероприятий</a></li>
 				<li><a></a> &#4448; &#4448; &#4448;</li>
 				<li><a href="contact.html">О нас</a></li>
-				<li><a href="register.html" class="active">Регистрация</a></li>
-				<li><a href="login.html">Войти</a></li>
+				<li><a href="register.html">Регистрация</a></li>
+				<li><a href="login.html" class="active">Войти</a></li>
 			</ul>
 		</div>
 		<div class="search-bar">
@@ -54,53 +55,31 @@
 		<ul class="path">
 			<li><a href="index.html">Главная</a>&nbsp; ></li>
 			<li><a href="contact.html">О нас</a>&nbsp; ></li>
-			<li class="actev">Регистрация&nbsp;</li>
+			<li class="actev">Войти&nbsp;</li>
 		</ul>
-		<h3 class="page-hed">Зарегестрироваться</h3>
-  	  <form> 
-		 <div class="register-top-grid">
-			 <div>
-				<span>логин<label>*</label></span>
-				<input type="text"> 
-			 </div>
-			 <div>
-				<span>Как мне тебя называть?<label>*</label></span>
-				<input type="text"> 
-			 </div>
-			 <div>
-				 <span>Email<label>*</label></span>
-				 <input type="text"> 
-			 </div>
-			 <div class="clearfix"> </div>
-			   <a class="news-letter" href="#">
-				 <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>Подписаться на благотворительную рассылку</label>
-			   </a>
-			 </div>
-		     <div class="register-bottom-grid">
-				    <h3>Пароль</h3>
-					 <div>
-						<span>Пароль<label>*</label></span>
-						<input type="password">
-					 </div>
-					 <div>
-						<span>Повторите пароль<label>*</label></span>
-						<input type="password">
-					 </div>
-			 </div>
-		</form>
-		<div class="clearfix"> </div>
-		<div class="register-but">
-		   <form>
-			   <input type="submit" value="Зарегестрироваться">
-			   <div class="clearfix"> </div>
-		   </form>
+			<h3 class="page-hed">Войти</h3>
+  	  	<form> 
+		<div class="register-top-grid">
+			<form method="post" action="login.html">
+  				<div class="input-group">
+  					<label for="login" class="uname" data-icon="u" > логин </label>
+  					<input type="text" name="username" >
+  				</div>
+  				<div class="input-group">
+  					<label for="pass" class="youpasswd" data-icon="p"> Пароль </label>
+  					<input type="text" name="password">
+  				</div>
+  				
+  					<button type="submit" class="btn" name="login_user">Войти</button>
+  				</div>
+				  <div class="input-group"> 
+  				<p>
+  					Еще не <a href="register.html">зарегистрированы?</a>
+  				</p>
+			</div>
+  			</form>
 		</div>
-		<div class="register-but">
-			<form>
-				<a href="login.html" >Уже зарегистрированы?</a>
-			</form>
-		 </div>
-   </div>
+	</div>
 </div>
 <!-- Register Part Ends Here -->
 <!-- Footer Starts Here -->
