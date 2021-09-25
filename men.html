@@ -17,6 +17,46 @@
 <script src="js/snap.svg-min.js"></script>
 </head>
 <body>
+	<style>
+		#zatemnenie {
+		  background: rgba(102, 102, 102, 0.5);
+		  width: 100%;
+		  height: 100%;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  display: none;
+		}
+		#okno {
+		  width: 300px;
+		  height: 50px;
+		  text-align: center;
+		  padding: 15px;
+		  border: 3px solid #0000cc;
+		  border-radius: 10px;
+		  color: #0000cc;
+		  position: absolute;
+		  top: 0;
+		  right: 0;
+		  bottom: 0;
+		  left: 0;
+		  margin: auto;
+		  background: #fff;
+		}
+		#zatemnenie:target {display: block;}
+		.close {
+		  display: inline-block;
+		  border: 1px solid #0000cc;
+		  color: #0000cc;
+		  padding: 0 12px;
+		  margin: 10px;
+		  text-decoration: none;
+		  background: #f2f2f2;
+		  font-size: 14pt;
+		  cursor:pointer;
+		}
+		.close:hover {background: #e6e6ff;}
+	  </style>	
 <!-- Header Starts Here -->
 <div class="container">
 	<div class="header">
@@ -41,6 +81,7 @@
 				<li><a href="contact.html">О нас</a></li>
 				<li><a href="register.html">Регистрация</a></li>
 				<li><a href="login.html">Войти</a></li>
+				<li><a href="reit.html">Рейтинг волонтеров</a></li>
 			</ul>
 		</div>
 		<div class="search-bar">
@@ -70,7 +111,7 @@
 								<figcaption>
 									<h2>фонд Константина Хабенского</h2>
 									<p style="color:#E64298">#побудьсомной. Баста, T-Fest, Мот и другие звезды проводят совместные эфиры с подопечными фонда — детьми с опухолями мозга.</p>
-									<button>Помочь</button>
+									<button>Участвовать</button>
 								</figcaption>
 							</figure>
 						</a>
@@ -79,35 +120,37 @@
 								<img src="images/d.jpg" />
 								<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
 								<figcaption>
-									<h2>Али Полат</h2>
-									<p>1 год, опухоль глаза</p>
+									<h2>Нарисуй счастье</h2>
+									<p style="color:#E64298">В детском доме №1 волонтёры вместе с ребятами расписали кружки яркими красками</p>
+									<button>Посмотреть</button>
+								</figcaption>
+							</figure>
+						</a>
+						<a href="single.html" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+							<figure>
+								<img src="https://nablagoe.ru/wp-content/uploads/logo-zhizn-kak-chudo.png"/>
+								<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+								<figcaption>
+									<h2>Фонд «Жизнь как чудо»</h2>
+									<p style="color:#E64298">Собранные средства идут на нужды подопечных фонда — детей с тяжелыми заболеваниями печени.</p>
 									<button>Помочь</button>
 								</figcaption>
 							</figure>
 						</a>
 						<a href="single.html" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
 							<figure>
-								<img src="images/c.jpg"/>
+								<img src="https://b.radikal.ru/b27/2109/46/c6f60af443d8.png" />
 								<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
 								<figcaption>
-									<h2>Мирослава кузьмина</h2>
-									<p>1 год, опухоль почек</p>
-									<button>Помочь</button>
-								</figcaption>
-							</figure>
-						</a>
-						<a href="single.html" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
-							<figure>
-								<img src="images/b.jpg" />
-								<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
-								<figcaption>
-									<h2>Дет дом №12</h2>
-									<p>Беднейший приют в россии </p>
-									<button>Помочь</button>
+									<h2>Добрый Титан</h2>
+									<p style="color:#E64298">Волонтеры отряда "Титан" передали воспитанникам детского дома №2 подарки. </p>
+									<button>Посмотреть</button>
 								</figcaption>
 							</figure>
 						</a>
 					</section>
+					
+
 					<div class="load">
 						<a href="contact.html">Я хочу сделать подарок всем </a>
 			</div>
