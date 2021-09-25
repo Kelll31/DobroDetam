@@ -60,21 +60,13 @@
 			<li class="actev">Личный кабинет&nbsp;</li>
 		</ul>
 			<h3 class="page-hed">Личный кабинет</h3>
-  	  	<form> 
-		<div class="register-top-grid">
-			<form method="post" action="login.html">
-  				<div class="input-group">
-  					<label for="login" class="uname" data-icon="u" > логин </label>
-  					<input type="text" name="username" >
-  				</div>
-  				<div class="input-group">
-  					<label for="pass" class="youpasswd" data-icon="p"> Пароль </label>
-  					<input type="text" name="password">
-  				</div>
-  				
-  					<button type="submit" class="btn" name="login_user">Личный кабинет</button>
-  				</div>
-				  <div class="input-group"> 
+
+		<form action="/login.php" method="POST">
+				<input name="username" type="text">
+				<input name="password" type="password">
+				<input type="submit" value="OK">
+		</form>
+
   				<p>
   					Еще не <a href="register.html">зарегистрированы?</a>
   				</p>
