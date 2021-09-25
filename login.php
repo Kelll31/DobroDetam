@@ -33,7 +33,7 @@ echo "Connected successfully";
 <div class="container">
 	<div class="header">
 		<div class="logo">
-			<a href="index.html"><h1>Добро пожаловать</h1></a>
+			<a href="index.php"><h1>Добро пожаловать</h1></a>
 		</div>
 		<span class="menu"></span>
 		<script>
@@ -46,10 +46,10 @@ echo "Connected successfully";
 		<div class="cleary"></div>
 		<div class="navigation">
 			<ul class="navig">
-				<li><a href="index.html" >Главная</a></li>
+				<li><a href="index.php" >Главная</a></li>
 				<li><a href="brands.html">Партнеры</a></li>
 				<li><a href="men.html">Галерея мероприятий</a></li>
-				<li><a href="contact.html">Хочу получить / О нас</a></li>
+				<li><a href="contact.html">О нас</a></li>
 				<li><a href="register.html">Регистрация</a></li>
 				<li><a href="login.php" class="active">Войти</a></li>
 			</ul>
@@ -65,7 +65,7 @@ echo "Connected successfully";
 <div class="container">
 	<div class="register">
 		<ul class="path">
-			<li><a href="index.html">Главная</a>&nbsp; ></li>
+			<li><a href="index.php">Главная</a>&nbsp; ></li>
 			<li><a href="contact.html">О нас</a>&nbsp; ></li>
 			<li class="actev">Войти&nbsp;</li>
 		</ul>
