@@ -1,8 +1,9 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<script src="form_auth.php"></script>
 <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
-<title>Добро детям |  Войти</title>
+<title>Добро детям |  Личный кабинет</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery-1.11.0.min.js"></script>
@@ -37,10 +38,12 @@
 				<li><a href="men.html">Галерея мероприятий</a></li>
 				<li><a href="contact.html">Хочу получить / О нас</a></li>
 				<li><a href="register.html">Регистрация</a></li>
-				<li><a href="login.html" class="active">Войти</a></li>
+				<li><a href="login.php" class="active">Войти</a></li>
 			</ul>
 		</div>
-		
+		<div class="search-bar">
+			<p>Вы вошли как: </p>
+			</div>
 		<div class="clearfix"></div>
 	</div>
 </div>
@@ -51,35 +54,15 @@
 		<ul class="path">
 			<li><a href="index.html">Главная</a>&nbsp; ></li>
 			<li><a href="contact.html">О нас</a>&nbsp; ></li>
-			<li class="actev">Войти&nbsp;</li>
+			<li class="actev">Личный кабинет&nbsp;</li>
 		</ul>
-		<h3 class="page-hed">Войти</h3>
-  	  <form> 
-		 <div class="register-top-grid">
-			 <div>
-				<p>
-                    <label for="login" class="uname" data-icon="u" > логин </label>
-                    <input id="login" name="login" required="required" type="text" placeholder=""/>
-                </p>
-			 </div>
-			 <div>
-				<p>
-                    <label for="pass" class="youpasswd" data-icon="p"> Пароль </label>
-                    <input id="pass" name="pass" required="required" type="text" placeholder="" />
-                </p>
-			 </div>
-		<div class="clearfix"> </div>
-		<div class="register-but">
-		</div>
-		   <form>
-		</p>
-		<p class="login-but">
-			<input type="submit" value="Войти" />
-		</p>
-			   <div class="clearfix"> </div>
-		   </form>
+		<h3 class="page-hed">Личный кабинет</h3>
+  	    <p>Вы вошли как: </p>	
+        <p>Ваша группа: </p>	
+        
 		</div>
    </div>
+
 </div>
 <!-- Register Part Ends Here -->
 <!-- Footer Starts Here -->

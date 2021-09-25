@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
-<title>Добро детям |  о нас </title>
+<title>Добро детям |  Войти</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery-1.11.0.min.js"></script>
@@ -15,6 +15,20 @@
 <link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
+<?php
+$servername = "a372193.ftp.mchost.ru";
+$username = "a372193_1";
+$password = "1Z9b7gve94k3";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
+?>
 <!-- Header Starts Here -->
 <div class="container">
 	<div class="header">
@@ -35,65 +49,55 @@
 				<li><a href="index.html" >Главная</a></li>
 				<li><a href="brands.html">Партнеры</a></li>
 				<li><a href="men.html">Галерея мероприятий</a></li>
-				<li><a href="contact.html" class="active">Хочу получить / О нас</a></li>
+				<li><a href="contact.html">Хочу получить / О нас</a></li>
 				<li><a href="register.html">Регистрация</a></li>
-				<li><a href="login.php">Войти</a></li>
+				<li><a href="login.php" class="active">Войти</a></li>
 			</ul>
 		</div>
 		<div class="search-bar">
-			<p>Вы вошли как: </p>	
-			</div>
-		
+			<p>Вы вошли как: </p>
+
 		<div class="clearfix"></div>
 	</div>
 </div>
-<!-- Header Ends Here -->
-<!-- Brand Page Starts Here -->
+<!-- Header Part Starts Here -->
+<!-- Register Part Starts Here -->
 <div class="container">
-<div class="brand">
-	<!-- Content --- Bar -->
-		<div class="brand-content-bar">
-			<ul class="path">
-				<li><a href="index.html">Дом</a>&nbsp; ></li>
-			</ul>
-			<h3 class="page-hed">Свяжись с нами</h3>
-			<div class="maps">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.0625278713152!2d37.58639871440304!3d54.16676652170547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41343ffa67ecd867%3A0x620c982482247d64!2z0KLRg9C70YzRgdC60LjQuSDQs9C-0YHRg9C00LDRgNGB0YLQstC10L3QvdGL0Lkg0YPQvdC40LLQtdGA0YHQuNGC0LXRgg!5e0!3m2!1sru!2sru!4v1631967581551!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-			</div>
-			<div class="clearfix"></div>
-			<div class="contact-boxy">
-				<div class="text1">
-					<p>Имя</p>
-					<input type="text">
-					<p>Email</p>
-					<input type="text">
-					<p>Город</p>
-					<input type="text">
-				</div>
-				<div class="text1">
-					<p>Сообщение нам</p>
-					<textarea></textarea>
-				</div>
-				<div class="text-b">
-					<input type="submit" value="Отправить" />
-				</div>
-			</div>
-			<div class="address-box">
-				<h3>Наши адреса</h3>
-				<p>Г. Тула Ул Смидович Д. 10А</p>
-				<p>Г. Москва Ул Пушкина Д. Колотушкина</p>
-				<p>+7 915 200 99 55</p>
-				<p><a href="maito:help@DobroDetam.ru">help@DobroDetam.ru</a></p>
-				<p><a href="https://vk.com/kelll31">Написать нам в вк</a></p>
-			</div>
+	<div class="register">
+		<ul class="path">
+			<li><a href="index.html">Главная</a>&nbsp; ></li>
+			<li><a href="contact.html">О нас</a>&nbsp; ></li>
+			<li class="actev">Войти&nbsp;</li>
+		</ul>
+			<h3 class="page-hed">Войти</h3>
+  	  	<form> 
+		<div class="register-top-grid">
+			<form method="post" action="login.php">
+  				<?php include('errors.php'); ?>
+  				<div class="input-group">
+  					<label for="login" class="uname" data-icon="u" > логин </label>
+  					<input type="text" name="username" >
+  				</div>
+  				<div class="input-group">
+  					<label for="pass" class="youpasswd" data-icon="p"> Пароль </label>
+  					<input type="password" name="password">
+  				</div>
+  				<div class="input-group">
+  					<button type="submit" class="btn" name="login_user">Login</button>
+  				</div>
+  				<p>
+  					Not yet a member? <a href="register.php">Sign up</a>
+  				</p>
+  			</form>
 		</div>
 	</div>
 </div>
+<!-- Register Part Ends Here -->
 <!-- Footer Starts Here -->
 <div class="container">
 <div class="footer">
 	<div class="logo">
-			<a href="#"><h1>Связь с нами</h1></a>
+		<a href="#"><h1>Связь с нами</h1></a>
 	</div>
 	<p class="copyright">89152009955 или <a href="https://vk.com/kelll31">ВААМ</a></p>
 	<ul class="social">
@@ -108,4 +112,3 @@
 <!-- Footer Ends Here -->
 </body>
 </html>
-		
