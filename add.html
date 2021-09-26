@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
-<title>Добро детям |  Регистрация</title>
+<title>Добро детям |  Добавление мероприятия</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery-1.11.0.min.js"></script>
@@ -15,6 +15,39 @@
 <link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
+
+    <style>
+        #zatemnenie:target {
+        display: block;
+        }
+        #zatemnenie {
+        background: rgba(70, 69, 69, 0.68);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        z-index: 99999909999;
+        }
+        window {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 40%;
+        border: 1px solid #FD9812;
+        padding: 50px;
+        transform: translate(-50%,-50%);
+        background-color: #fafafa;
+        }
+        div#main_text a.close_window {
+        position: static;
+        right: 10px;
+        top: 4px;  
+        border: none;       
+        }
+        
+        </style>
 <!-- Header Starts Here -->
 <div class="container">
 	<div class="header">
@@ -34,15 +67,16 @@
 			<ul class="navig">
 				<li><a href="index.html" >Главная</a></li>
 				<li><a href="brands.html">Партнеры</a></li>
-				<li><a href="men.html">Галерея мероприятий</a></li>
+				<li><a href="men.html" class="active">Галерея мероприятий</a></li>
 				<li><a></a> &#4448; &#4448; &#4448;</li>
 				<li><a href="contact.html">О нас</a></li>
-				<li><a href="register.html" class="active">Регистрация</a></li>
+				<li><a href="register.html">Регистрация</a></li>
 				<li><a href="login.html">Войти</a></li>
 				<li><a href="reit.html">Рейтинг волонтеров</a></li>
                 <li><a href="study.html">Обучение</a></li>
 			</ul>
 		</div>
+		
 		<div class="clearfix"></div>
 	</div>
 </div>
@@ -52,53 +86,42 @@
 	<div class="register">
 		<ul class="path">
 			<li><a href="index.html">Главная</a>&nbsp; ></li>
-			<li><a href="contact.html">О нас</a>&nbsp; ></li>
-			<li class="actev">Регистрация&nbsp;</li>
+			<li><a href="contact.html">Галерея мероприятий</a>&nbsp; ></li>
+			<li class="actev">Добавить мероприятие&nbsp;</li>
 		</ul>
-		<h3 class="page-hed">Зарегестрироваться</h3>
-  	  <form> 
-		 <div class="register-top-grid">
-			 <div>
-				<span>логин<label>*</label></span>
-				<input type="text"> 
-			 </div>
-			 <div>
-				<span>Как мне тебя называть?<label>*</label></span>
-				<input type="text"> 
-			 </div>
-			 <div>
-				 <span>Email<label>*</label></span>
-				 <input type="text"> 
-			 </div>
-			 <div class="clearfix"> </div>
-			   <a class="news-letter" href="#">
-				 <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>Подписаться на благотворительную рассылку</label>
-			   </a>
-			 </div>
-		     <div class="register-bottom-grid">
-				    <h3>Пароль</h3>
-					 <div>
-						<span>Пароль<label>*</label></span>
-						<input type="password">
-					 </div>
-					 <div>
-						<span>Повторите пароль<label>*</label></span>
-						<input type="password">
-					 </div>
-			 </div>
-		</form>
+		<h3 class="page-hed">Добавить мероприятие</h3>
+  	  
+        <div class="contact-boxy">
+            <div class="text1">
+                <p>Название</p>
+                <input type="text">
+                <p>Город</p>
+                <input type="text">
+            </div>
+            <div class="text1">
+                <p>Описание</p>
+                <textarea></textarea>
+            </div>
+            <p>Загрузите изображение мероприятия</p>
+            <form enctype="multipart/form-data" method="post">
+                <p><input type="file" name="f">
+               </form> 
+        </div>
+
 		<div class="clearfix"> </div>
 		<div class="register-but">
 		   <form>
-			   <input type="submit" value="Зарегестрироваться">
+                <a type="submit" href="#zatemnenie">Добавить</a>
+                <div id="zatemnenie">        
+                <window>           
+                <a href="#close_window" class="close_window">X</a>           
+                К сожалению сайт еще не подключен к БД, поэтому вы не сможете добавить ваше мероприятие.        
+                </window>
+            </div>
+
 			   <div class="clearfix"> </div>
 		   </form>
 		</div>
-		<div class="register-but">
-			<form>
-				<a href="login.html" >Уже зарегистрированы?</a>
-			</form>
-		 </div>
    </div>
 </div>
 <!-- Register Part Ends Here -->
